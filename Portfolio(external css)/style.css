@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    padding-bottom: 40px;
+}
+
+header {
+    background: linear-gradient(135deg, #0073e6, #004a99);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 1.2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    max-width: 850px;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+ul li strong {
+    color: #0073e6;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #004a99;
+    text-decoration: underline;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    background: #0073e6;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    background: #004a99;
+}
