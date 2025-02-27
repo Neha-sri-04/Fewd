@@ -2,107 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio - Arepalle Neha Sri Reddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arepalle Neha Sri Reddy - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #007bff, #6610f2);
+        }
+        .hero {
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: white;
+            padding: 100px 20px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        section {
+            padding: 80px 0;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Arepalle Neha Sri Reddy</h1>
-            <p class="lead">Passionate Engineer | Enthusiastic Learner | Problem Solver | Backend Developer</p>
-        </div>
-    </header>
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Self Introduction</h2>
-                        <p class="card-text">
-                            I am a driven third-year Computer Science student, eager to leverage my skills in C++, Java, and Python
-                            for innovative software development. With a strong foundation in backend development and database management,
-                            I am passionate about building impactful solutions. I have collaborated on multiple projects, participated
-                            in internships, and actively contributed to open-source development. Currently, I am seeking opportunities
-                            to expand my knowledge and contribute meaningfully to the tech industry.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Skills</h2>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><strong>Programming:</strong> Python, JavaScript, C++</li>
-                            <li class="list-group-item"><strong>Web Development:</strong> HTML, CSS, React, Express.js, Node.js</li>
-                            <li class="list-group-item"><strong>Machine Learning & AI</strong></li>
-                            <li class="list-group-item"><strong>Database Management:</strong> MySQL, MongoDB</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Projects & Work Experience</h2>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <strong>Katha Vaachak</strong>
-                                <p>Developed a system for AI-generated stories.</p>
-                            </li>
-                            <li class="list-group-item">
-                                <strong>Fitness Application (Python)</strong>
-                                <p>Designed a fitness app that tracks workouts and diet using Python.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h2 class="card-title text-center">Feedback & Achievements</h2>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Received a certificate for Python, NumPy, and Pandas.</li>
-                            <li class="list-group-item">Positive feedback from mentors on the Katha Vaachak project.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="card shadow-sm">
-                    <div class="card-body text-center">
-                        <h2 class="card-title">Education</h2>
-                        <p><strong>B.Tech in Computer Science</strong> - Keshav Memorial Institute of Technology</p>
-                        <p>Year: 2022 - 2026</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-4">
-            <div class="col-md-8">
-                <div class="card shadow-sm text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Contact Information</h2>
-                        <p><strong>Email:</strong> arepallenehasri@gmail.com</p>
-                        <p><strong>Phone:</strong> 7330841888</p>
-                        <a href="mailto:arepallenehasri@gmail.com" class="btn btn-primary m-2">Email Me</a>
-                        <a href="tel:7330841888" class="btn btn-primary m-2">Call Me</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Neha Sri Reddy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <h1 class="display-4 fw-bold">Arepalle Neha Sri Reddy</h1>
+        <p class="lead">Passionate Engineer | Backend Developer | Problem Solver</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container text-center">
+        <h2 class="mb-4">About Me</h2>
+        <p>
+            I am a driven third-year Computer Science student, eager to leverage my skills in C++, Java, and Python for innovative software development. 
+            Passionate about backend development, database management, and AI.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <h5>Programming</h5>
+                        <p>Python, JavaScript, C++</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <h5>Web Development</h5>
+                        <p>HTML, CSS, React, Express.js, Node.js</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 shadow">
+                        <h5>Database</h5>
+                        <p>MySQL, MongoDB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Katha Vaachak</h5>
+                            <p class="card-text">Developed an AI-powered storytelling system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Fitness Application</h5>
+                            <p class="card-text">A Python-based app for workout & diet tracking.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Education</h2>
+            <p><strong>B.Tech in Computer Science</strong> - Keshav Memorial Institute of Technology (2022 - 2026)</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p><strong>Email:</strong> arepallenehasri@gmail.com</p>
+            <p><strong>Phone:</strong> 7330841888</p>
+            <a href="mailto:arepallenehasri@gmail.com" class="btn btn-primary mt-3">Send Email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p class="mb-2">© 2025 Arepalle Neha Sri Reddy. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank"><i class="bi bi-twitter"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
